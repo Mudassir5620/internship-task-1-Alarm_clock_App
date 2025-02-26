@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./Images/favicon.png" >
+
+    <!-- css styles -->
+    <link rel="stylesheet" href="style.css">
+    <title>Alarm Clock</title>
+
+    <!-- fontawesome icon link -->
+    <script
+        src="https://kit.fontawesome.com/9c250245e3.js"
+        crossorigin="anonymous"
+        ></script>
+
+</head>
+<body>
+
+    <!-- main container -->
+    <div class="mainContainer">
+
+
+        <!-- alarm clock container -->
+        <div class="clockContainer">
+                
+                <!-- section to display current time in clock -->
+                <div id="timeDisplay">
+
+                    <!-- clock image before time -->
+                    <div class="clockImage"></div>
+
+
+                    <!-- display current time -->
+                    <!-- HH:MM:SS format  -->
+                    <div id="currentTime">
+
+                        <!-- to show hours in clock -->
+                        <span id="hours"></span>
+                        <span>:</span>
+
+                        <!-- to show minutes -->
+                        <span id="minutes"></span>
+                        <span>:</span>
+
+                        <!-- to show seconds  -->
+                        <span id="seconds"></span>
+                        &nbsp;
+                        &nbsp;
+
+                        <!-- AM / PM  -->
+                        <span id="session"></span>
+
+                    </div>
+
+                    <!-- clock image after time -->
+                    <div class="clockImage"></div>
+
+                </div>
+
+
+                <!-- section to add a new alarm  -->
+                <!-- container -->
+                <div id="addAlarm">
+                    
+                    <!-- for taking input from user -->
+                    <div id="timeInput">
+
+                        <!-- hours select tag -->
+                        <select name="hours" id="hoursInput">
+                            <!-- option value will be inserted via javascript -->
+                            <option>Hour</option>
+                        </select>
+
+                        <!-- for minutes select tag -->
+                        <label for="minutesInput">:</label>
+                        <select name="minutes" id="minutesInput">
+                            <!-- option values will be inserted via javascript -->
+                            <option>Minute</option>
+                        </select>
+
+                        <label for="secondsInput">:</label>
+                        <select name="seconds" id="secondsInput">
+                            <!-- option values will be inserted via javascript -->
+                            <option>Second</option>
+                        </select>
+  
+                        <!-- AM / PM  -->
+                        <select name="session" id="sessionInput">
+                          <option value="AM">AM</option>
+                          <option value="PM">PM</option>
+                        </select>
+
+                    </div>
+
+                    <!-- set alarm  button container -->
+                    <div id="btnContainer">
+                        <!-- set alarm button -->
+                        <button class="setAlarmBtn">
+                            Set Alarm
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <!-- list of all the alarms -->
+                <div id="alarmList">
+                    
+                    <!-- values will be inserted via javascript -->
+
+                </div>
+
+        </div>
+
+    </div>
+
+    <!-- script tag  -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
